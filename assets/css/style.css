@@ -460,7 +460,7 @@ p {
   margin-bottom: 30px; }
 
 .slider-text h4 {
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 .section-title {
   padding-bottom: 60px; }
@@ -785,6 +785,10 @@ p {
   text-align: center;
   position: relative;
   top: -55px; }
+  
+  .slider-icon.list-inline img {
+    opacity: 0.2;
+}
 
 /*-----------------------------------------------------------------------------------
   3- Title Section
@@ -945,11 +949,7 @@ p {
   z-index: 2; }
 
 .themeix-month-area {
-  background-image: url(../image/month-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+ }
 
 .section-title {
   width: 70%;
@@ -995,12 +995,11 @@ p {
   max-width: 70%; }
 
 .client-portfolio {
-  height: 100%;
-  background-image: url(../image/client-portfolio-bg.jpg);
-  background-repeat: repeat;
-  background-size: 25%;
-  background-attachment: fixed; }
+    height: 100%;
+    background: #282b32;
 
+  
+}
 .client-portfolio-wrap {
   max-width: 480px;
   margin-right: 60px;
@@ -1096,7 +1095,7 @@ p {
   8- Pricing Section
 -----------------------------------------------------------------------------------*/
 .pricing-box {
-  border-radius: 20px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow:10px 12px 17px -13px #bbbbbb }
 
