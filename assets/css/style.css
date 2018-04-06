@@ -362,7 +362,7 @@ p {
 * fonts-weight 
 */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600; }
+  font-weight: 700; }
 
 p {
   font-weight: 400; }
@@ -615,7 +615,7 @@ p {
   list-style: none; }
 
 .nav-menu ul li a {
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize; }
 
 .nav-menu ul li {
@@ -739,7 +739,7 @@ p {
   z-index: 1; }
 
 .slider-text h1 {
-  font-weight: 600; }
+  font-weight: 700; }
 
 .slider-text h4 {
   font-weight: 400; }
@@ -797,7 +797,7 @@ p {
   margin: auto; }
 
 .title-wrapper h1 {
-  font-weight: 600; }
+  font-weight: 700; }
 
 .title-wrapper p {
   font-size: 18px; }
@@ -811,7 +811,7 @@ p {
 
 .title-wrapper .title-breadcrumb a {
   text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 700; }
 
 .title-button-container {
   position: relative; }
@@ -1105,7 +1105,7 @@ p {
   padding: 25px 0px 40px 0px; }
 
 .pricing-box .pricing-rate h2 {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px; }
 
 .pricing-box .pricing-rate h4 {
