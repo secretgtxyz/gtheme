@@ -1,0 +1,41 @@
+
+<!-- Latest Start  -->
+<div class="themeix-latest-area section-spacing bgcolor1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                  <h2>Latest Ghost Themes</h2>
+                  <p>All of our ghost templates are SEO friendly and we spent extra times to analysis your needs, So you don't need to take extra panic </a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+           {% for themes in site.themes limit:4 %}
+            <div class="col-md-6">
+                <div class="latest-box box-style1 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="latest-template" style="background:url({{themes.thumbnail}}) no-repeat">
+                        <div class="latest-hover d-flex align-items-center justify-content-center">
+                            <div class="latest-hover-button text-center">
+                                <a href="{{themes.demo_link}}" class="btn  button-style3 button-color2" data-text="View demo"><span>live demo</span></a>
+                                <a href="{{themes.purchase_link}}" class="btn  button-style3 button-color1" data-text="Join Now"><span>download</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><a href="{{themes.url}}">{{themes.name}}</a></h3>
+                    <div class="date">{{themes.published_date | date_to_long_string }}</div>
+                    <p>{{themes.description | strip_html | truncatewords: 18 }}</p>
+                </div>
+            </div>
+           {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="latest-template-btn text-center">
+                    <a href="/themes" class="btn button-style2 button-color3" data-text="View all themes"><span>browse all themes</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Latest End  -->

@@ -1,0 +1,36 @@
+<!-- Start Blog Section -->
+<div class="themeix-blog-area section-spacing bgcolor4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h2>Recent Blog Posts</h2>
+                    <p>Blog Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sapiente explicabo , expedita reprehenderit rerum</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-wrapper">
+                   {% for posts in site.posts limit: "6" %}
+                    <div class="single-blog">
+                        <div class="blog-article box-style1 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="blog-article-img height-250" style="background-image:url({{posts.image_url}})"></div>
+                            <h4 class="post-heading"><a href="{{posts.url}}">{{posts.title}}</a></h4>
+                            <div class="section-article-meta">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-user-o" aria-hidden="true"></i>{{posts.author}}</li>
+                                    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{{posts.date | date_to_string}}</li>
+                                </ul>
+                            </div>
+                            <p>{{posts.content | strip_html | truncate: 150}}</p>
+                           <a href="{{posts.url}}" class="thin-link" data-text="read more"><span>read more</span></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog Section -->

@@ -1,0 +1,46 @@
+---
+layout: default
+addMenu: true
+title: blog
+permalink: /blog/
+description: blog description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quam, consequatur, soluta necessitatibus, incidunt deserunt, nam sint totam ea fugit explicabo temporibus perspiciatis neque ducimus quos deleniti est magni dignissimos!
+pagination:
+  enabled: true
+---
+
+<!-- Slider Start  -->
+<div class="themeix-title-area section-spacing bgcolor2">
+    <div class="slider-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-wrapper text-center wow zoomIn" data-wow-delay="0.1s">
+                        <h1 class="display-4">Blog Post</h1>
+                        <p>{{page.description}}</p>
+                        <nav class="title-breadcrumb breadcrumb">
+                            <a class="breadcrumb-item" href="{{site.url}}">Home</a>
+                            <a class="breadcrumb-item" href="{{url}}">Blog</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider End  -->
+<!-- Blog Start  -->
+<div class="themeix-blog-area section-spacing bgcolor1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+              {% include post_loop.html %}
+            </div>
+            <div class="col-md-4">
+              <!-- Start Sidebar -->
+                {% include sidebar.html %}
+              <!-- End Sidebar -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End  -->

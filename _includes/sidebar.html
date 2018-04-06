@@ -1,0 +1,40 @@
+<div class="sidebar">
+    <div class="search-widget sidebar-widget">
+        <div class="input-group" id="search-container">
+            <input type="text" class="form-control" id="search-input" placeholder="Search">
+            <span class="input-group-btn">
+			<button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		  </span>
+        </div>
+        <ul id="results-container"></ul>
+    </div>
+    <div class="theme-widget sidebar-widget">
+        <h4>recent theme</h4>
+         {% for theme in site.themes limit: "1"  %}
+          <a href="{{theme.demo_link}}"><img src="{{theme.thumbnail}}" alt="{{theme.name}}"/></a>
+         {% endfor %}
+    </div>
+    <div class="recent-widget sidebar-widget">
+        <h4>from the blog</h4>
+        {% for posts in site.posts | limit: '4' | sort: 'date' %}
+        <div class="recent-wrapper">
+            <div class="recent-image float-left"><img src="{{posts.image_url}}" alt="{{posts.title}}"/></div>
+            <div class="recent-content float-left">
+                <a href="{{posts.url}}">{{posts.title}}</a>
+                <span>{{posts.date | date_to_string }}</span>
+            </div>
+        </div>
+       {% endfor %}
+    </div>
+    <div class="archive-widget sidebar-widget">
+        <h4> Categories </h4>
+        <div class="archive-list">
+            <ul class="list-inline">
+             {% for category in site.categories %}
+              {% assign category_name = category[0] %}
+                <li><a href="/category/{{ category_name | slugify }}/">{{ category_name | replace: "-", " " }}</a></li>
+             {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

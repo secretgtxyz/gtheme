@@ -1,0 +1,26 @@
+
+<!-- Feature Start  -->
+<div class="themeix-feature-area section-spacing bgcolor1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h2>What we giving to our customers?</h2>
+                    <p>Get access to all our Ghost themes for the price of one. A new theme will add each month at the end of month. So let you take the membership from us</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          {% for features in site.data.features %}
+            <div class="col-md-4">
+                <div class="feature-box box-style1 wow bounceIn text-center" data-wow-delay="0.2s">
+                    <div class="feature-icon"><img src="{{features.icon}}" alt="{{features.title}}"/></div>
+                    <h5>{{features.title}}</h5>
+                    <p>{{features.description}}</p>
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Feature End  -->

@@ -1,0 +1,261 @@
+/*	Computer Layout: 1024px. */
+
+@media only screen and (min-width: 1024px) and (max-width:1264px){
+	.client-group-container {
+		max-width: 100%;
+	}
+	.month-button-ptn a{
+		margin-bottom:30px;
+	}
+	.title-click-see {
+		right: -1%;
+		top: -16px;
+		max-width: 160px;
+	}
+
+}
+
+/*	Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+	.section-spacing {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.section-spacing2 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.section-spacing3 {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	.slider-text{
+		margin-bottom:30px;
+		margin-top:0;
+	}
+	.slider-text h4 {
+		margin-bottom: 25px;
+	}
+	.slider-text h1 {
+		font-size: 40px;
+	}
+	.slider-button-container a{
+		margin-bottom:30px;
+	}
+	.slider-icon{
+		display:none;
+	}
+	.client-group-wrap {
+		padding: 50px 30px;
+	}
+	.client-group-container {
+		max-width: 100%;
+	}
+	.themeix-client-area .client-portfolio-wrap {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	.pricing-box{
+		margin-bottom:30px;
+	}
+	.latest-hover-button a {
+		margin-right:0;
+		margin-bottom:30px;
+		display:block;
+	}
+	.section-title {
+		width: 100%;
+	}
+	.not-found-img {
+		max-width: 320px;
+		margin-bottom: 30px;
+	}
+	.themeix-call2-area .call-wrapper {
+		max-width: 100%;
+		margin: auto;
+	}
+	.themeix-call2-area .call-wrapper h2 {
+		font-size: 60px;
+	}
+	.title-click-see {
+		right: -18%;
+		top: -16px;
+		max-width: 160px;
+	}
+	.themeix-call-area .call-wrapper {
+		max-width: 100%;
+	}
+	.latest-box h3 {
+		font-size: 22px;
+	}
+	.theme-details-template{
+		margin-bottom:30px;
+	}
+	.nav-mobile{
+		display:block;
+	}
+    .nav-menu ul.nav{
+		display: none;
+		background: #fff;
+		padding: 30px;
+		width: 100%;
+		left: 0;
+		right: 0;
+		position: absolute;
+		z-index: 111;
+		text-align: center;
+		top: 55px;
+	}
+	.nav-menu ul li{
+		display:block;
+	}
+	.nav-menu ul li:hover .nav-submenu{
+		display: block !important;
+		position: relative;
+		text-align: center;
+	}
+	.client-portfolio-wrap {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+
+}
+
+
+/*	Mobile Layout: 420px.  */
+
+@media only screen and (max-width: 767px) {
+	.section-spacing {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.section-spacing2 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.section-spacing3 {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	.slider-text{
+		margin-top:0;
+	}
+	.slider-text h1{
+		font-size:30px;
+		margin-bottom:15px;
+	}
+	.slider-text h4{
+		font-size:20px;
+		margin-bottom:30px;
+	}
+	.slider-icon{
+		display:none;
+	}
+	.slider-button-container a {
+		margin-bottom: 30px;
+    }
+	.section-title{
+       padding-bottom:40px;
+	}
+	.section-title h2{
+       font-size:28px;
+	}
+	.feature-box {
+       margin-bottom: 30px;
+   }
+   .client-group-container {
+		max-width: 100%;
+	}
+   .month-layout {
+      padding-bottom: 30px;
+   }
+   .month-button-ptn a{
+	  margin-bottom:30px;
+   }
+   .themeix-client-area .client-portfolio-wrap {
+		margin: auto;
+    }
+	.pricing-box{
+		margin-bottom:30px;
+	}
+	.footer-copyright{
+		text-align:center;
+	}
+	.footer-copyright ul{
+		text-align:center !important;
+	}
+	.section-title {
+		width: 100%;
+	}
+	.title-wrapper h1 {
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+	.not-found-img {
+		max-width: 230px;
+		margin-bottom: 30px;
+	}
+	.themeix-call2-area .call-wrapper {
+		max-width: 100%;
+	}
+	.themeix-call2-area .call-wrapper h2 {
+		font-size: 45px;
+	}
+	.title-button-container a {
+		margin-bottom: 30px;
+	}
+	.title-click-see {
+		right: -10%;
+		top: 67px;
+		max-width: 150px;
+	}
+	.theme-details-template {
+		margin-bottom: 30px;
+	}
+	.horizontal-timeline {
+		margin-bottom:30px;
+	}
+	.themeix-call-area .call-wrapper {
+		max-width: 100%;
+	}
+	.client2-portfolio .client-portfolio-wrap {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.client-portfolio-wrap {
+		padding: 0px 10px 35px 10px;
+	}
+		.nav-mobile{
+		display:block;
+	}
+    .nav-menu ul.nav{
+		display: none;
+		background: #fff;
+		padding: 30px;
+		width: 100%;
+		left: 0;
+		right: 0;
+		position: absolute;
+		z-index: 111;
+		text-align: center;
+		top: 55px;
+	}
+	.nav-menu ul li{
+		display:block;
+	}
+	.nav-menu ul li:hover .nav-submenu{
+		display: block!important;
+		position: relative;
+		text-align: center;
+	}
+	.theme-details-info .nav-tabs .nav-link{
+		margin-bottom:15px;
+	}
+}
+/*	Small Mobile Layout: 320px.  */
+
+@media only screen and (max-width: 420px) {
+
+}

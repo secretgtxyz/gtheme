@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include page_header.html %}
+
+<!-- Latest Start  -->
+<div class="themeix-latest-area section-spacing bgcolor2">
+    <div class="container">
+        <div class="row">
+            {% for themes in site.themes %}
+             <div class="col-md-6">
+                <div class="latest-box box-style1 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="latest-template" style="background:url({{themes.thumbnail}}) no-repeat">
+                        <div class="latest-hover d-flex align-items-center justify-content-center">
+                            <div class="latest-hover-button text-center">
+                                <a href="{{themes.demo_link}}" class="btn  button-style3 button-color2" data-text="live demo"><span>live demo</span></a>
+                                <a href="{{themes.purchase_link}}" class="btn  button-style3 button-color1" data-text="downlaod"><span>download</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><a href="{{themes.url}}">{{themes.name}}</a></h3>
+                    <div class="date">{{themes.date | date_to_long_string }}</div>
+                    <p>{{themes.description | strip_html | truncatewords: 18 }}</p>
+                </div>
+             </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Latest End  -->
+
+{% include call_to_action.html %}

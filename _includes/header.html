@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="description" content="themeix description"/>
+<meta name="themeix" content="ghost template"/>
+<title>GhostSumo | Premium Ghost & Jekyll Theme </title>
+<!--Call Favicon Icon-->
+<link rel="shortcut icon" href="{{site.baseurl}}/assets/image/favicon.png" type="images/x-icon">
+<link rel="icon" href="{{site.baseurl}}/assets/image/favicon.png" type="images/x-icon">
+<!-- All Css File Add -->
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/animate.min.css"/>
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/owl.carousel.min.css"/>
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css"/>
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/responsive.css"/>
+<!-- Lato Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f50f33c1-f15a-4638-8908-48ba5a56716b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</head>
+
+<body class="themeix-nicescrol">
+<!-- preloader -->
+<main class="main-section">
+    <!-- Start Header -->
+    <header class="themeix-header-area section-spacing2 bgcolor4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-nav">
+                        <div class="navbar-brand float-left">
+                            <a href="{{site.url}}"><img src="/assets/image/brand-logo.png" alt="header brand" /></a>
+                        </div>
+                        <nav class="nav-menu float-right">
+						   <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link active" href="{{site.url}}">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{site.url}}\themes">Themes</a></li>
+                                {% for pageInfo in site.pages %}
+                                  {% if pageInfo.addMenu == true %}
+                                  
+                                    <li class="nav-item"><a class="nav-link" href="{{pageInfo.url}}">{{pageInfo.title}}</a></li>
+                                    
+                                  {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->

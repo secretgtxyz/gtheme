@@ -1,0 +1,64 @@
+
+<!-- Details Start  -->
+<div class="themeix-details-area section-spacing bg-color2lighten">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-5">
+                <div class="theme-details-template box-style1 d-flex align-items-center wow pulse">
+                    <a href="#"><img class="" src="{{page.thumbnail}}" alt="theme details" /></a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-7">
+                <div class="theme-details-info wow fadeIn" data-wow-delay="0.6s">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home">description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile">comment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact">support</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home">
+                            <div class="theme-details-tab-wrapper">
+                                <div class="date">{{page.date | date_to_long_string }}</div>
+                                <p>{{ page.description | strip_html | truncatewords: 18 }} </p>
+                                <div class="theme-details-button-container clearfix">
+                                    <a href="{{ page.demo_link}}" class="btn  button-style1 button-color1" data-text="view live demo"><span>view live demo</span></a>
+                                    <a href="{{ page.purchase_link}}" class="btn  button-style1 button-color2" data-text="download"><span>download</span></a>
+                                </div>
+                                <div class="section-social-meta">
+                                    <ul class="list-inline">
+                                      <li class="list-inline-item facebook">
+                                          <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> Facebook
+                                      </li>
+                                      <li class="list-inline-item twitter">
+                                         <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="share on twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>twitter
+                                      </li>
+                                        <li class="list-inline-item google-plus">
+                                            <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="share on google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>google+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <div class="theme-details-tab-wrapper">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe facere, maxime, quas doloribus aspernatur autem doloremque neque minus fugit atque eius ipsa dignissimos ad magni ea distinctio sapiente sed. Ducimus!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact">
+                            <div class="theme-details-tab-wrapper">
+                                <a href="http://themeix.com">Support Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Details End  -->

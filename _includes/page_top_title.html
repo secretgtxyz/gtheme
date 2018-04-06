@@ -1,0 +1,21 @@
+<!-- Slider Start  -->
+<div class="themeix-title-area section-spacing bgcolor2">
+    <div class="slider-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-wrapper text-center wow zoomIn" data-wow-delay="0.1s">
+                        <h1 class="display-4">{{page.title}}</h1>
+                        {% if page.description %} <p>{{page.description}}</p> {% else %}
+                        <p>{{site.description}}</p>{% endif %}
+                        <nav class="title-breadcrumb breadcrumb">
+                            <a class="breadcrumb-item" href="{{site.url}}">Home</a>
+                            <a class="breadcrumb-item" href="{{url}}">{{page.title}}</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider End  -->

@@ -1,0 +1,43 @@
+{% for posts in paginator.posts %}
+  <div class="blog-article box-style1 wow fadeIn" data-wow-delay="0.2s">
+      <div class="blog-article-img"><img class="img_fluid" src="{{posts.image_url}}" alt="{{posts.title}}"/></div>
+      <h3><a class="linking" href="{{posts.url}}">{{posts.title}}</a></h3>
+      <div class="section-article-meta">
+          <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-user-o" aria-hidden="true"></i>{{posts.author}}</li>
+              <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{{posts.date | date_to_string }}</li>
+          </ul>
+      </div>  
+      <p>{{posts.content | strip_html | truncatewords: 35}}</p>
+      <a href="{{posts.url}}" class="btn  button-style1 button-color2" data-text="read more"><span>read more</span></a>
+   </div>
+   {% endfor %}
+   
+  <div class="blog-pagination wow fadeIn" data-wow-delay="0.6s">
+      <div class="row">
+          <div class="col-sm-6">
+              <nav class="text-left">
+
+                  {% if paginator.total_pages > 1 %}
+                  <ul class="list-inline">
+                    {% if paginator.previous_page %}
+                    <li>
+                      <a class="btn button-style2 button-color2" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer Posts</a>
+                    </li>
+                    {% endif %}
+                    {% if paginator.next_page %}
+                    <li>
+                      <a class="btn button-style2 button-color2" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older Posts</a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                  {% endif %}
+              </nav>
+          </div>
+          <div class="col-sm-6">
+              <div class="text-right">
+                  <p>Page {{paginator.page}} of {{paginator.total_pages}} Pages</p>
+              </div>
+          </div>
+      </div>
+  </div>

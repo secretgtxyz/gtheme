@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+{% include page_top_title.html %}
+<!-- Blog Start  -->
+<div class="themeix-single-area section-spacing bgcolor1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-8">
+                <div class="single-content wow zoomIn" data-wow-delay="0.1s">
+                    <div class="single-image"><img src="{{page.image_url}}" alt="{{page.title}}"/></div>
+                    <h2>{{page.title}}</h2>
+                    <div class="section-article-meta">
+                        <ul class="list-inline">
+                           {% if page.author %}
+                            <li class="list-inline-item"><i class="fa fa-user-o" aria-hidden="true"></i>{{page.author}}</li>
+                           {% endif %}
+                            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{{page.date | date_to_string}}</li>
+                        </ul>
+                    </div>
+                     <div class="post-content">
+                         {{content}}
+                     </div>
+                    <div class="section-social-meta">
+                        <ul class="list-inline">
+                            <li class="list-inline-item facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>facebook</li>
+                            <li class="list-inline-item twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>twitter</li>
+                            <li class="list-inline-item google-plus"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>google+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4">
+               <!-- Start Sidebar --> 
+               {% include sidebar.html %}
+               <!-- End Sidebar --> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End  -->

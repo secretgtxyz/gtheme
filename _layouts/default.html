@@ -1,0 +1,17 @@
+  {% include header.html %}
+
+<!-- script pointing to jekyll-search.js -->
+<script src="{{ site.baseurl }}/simple-jekyll-search.min.js"></script>
+
+    {{ content }}
+
+    <script>
+    	
+		SimpleJekyllSearch({
+		  searchInput: document.getElementById('search-input'),
+		  resultsContainer: document.getElementById('results-container'),
+		  json: '/search.json'
+		});
+    </script>
+        
+  {% include footer.html %}

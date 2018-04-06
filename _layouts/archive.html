@@ -1,0 +1,45 @@
+---
+layouts: archive
+---
+
+ {% include header.html %}
+
+	<div class="themeix-blog-area section-spacing bgcolor1">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-8">
+					{% for posts in page.posts %}
+					  <div class="blog-article box-style1 wow fadeIn" data-wow-delay="0.2s">
+					      <div class="blog-article-img"><img class="img_fluid" src="{{posts.image_url}}" alt="{{posts.title}}"/></div>
+					      <h3><a class="linking" href="{{posts.url}}">{{posts.title}}</a></h3>
+					      <div class="section-article-meta">
+					          <ul class="list-inline">
+					              <li class="list-inline-item"><i class="fa fa-user-o" aria-hidden="true"></i>{{posts.author}}</li>
+					              <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{{posts.date | date_to_string }}</li>
+					          </ul>
+					      </div>  
+					      <p>{{posts.content | strip_html | truncatewords: 35}}</p>
+					      <a href="{{posts.url}}" class="btn  button-style1 button-color2" data-text="read more"><span>read more</span></a>
+					   </div>
+					{% endfor %}
+	            </div>
+	            <div class="col-md-4">
+	              <!-- Start Sidebar -->
+	                {% include sidebar.html %}
+	              <!-- End Sidebar -->
+	            </div>
+	        </div>
+	    </div>
+	</div>   
+        
+ {% include footer.html %}
+
+
+
+
+
+
+
+
+  
+  
